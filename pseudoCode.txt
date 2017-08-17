@@ -1,0 +1,43 @@
+---------------------Modules Needed-------------------
+inquirer
+
+---------------------Node Pages-----------------------
+bamazonCustomer.js
+  *Displays all items for sale (id names and prices for products);
+    *Ask which ID customer would like to buy
+    *Ask qty to purchase
+      if(Check QOH > orderQty){
+        *Complete Order
+          *remove qty from database, show total cost to CLI
+      } else {
+        *log 'Insufficient quantity!'
+      }
+
+bamazonManager.js
+  *Prompt([
+    'View Products for Sate',
+      *List All Available Items
+        *If qty < 0 show on CLI(id, names, prices, and qty);
+    'View Low Inventory',
+    'Add to Inventory',
+    'Add New Product'
+  ])
+
+bamazonSupervisor.js
+
+
+---------------------Databases Needed----------------------
+  bamazon
+    Products(
+      item_id INTEGER(10) auto_increment NOT NULL,
+      product_name VARCHAR(100) NOT NULL,
+      department_name VARCHAR(100) NOT NULL,
+      price DECIMAL(5,2) NOT NULL,
+      stock_quantity INTEGER(10) NOT NULL DEFAULT 0,
+      PRIMARY KEY(item_id)
+    )
+
+    logins(
+      username VARCHAR(100) NOT NULL,
+      password VARCHAR(100) NOT NULL
+    )
