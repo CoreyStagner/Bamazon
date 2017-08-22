@@ -7,7 +7,7 @@
  -----------------------------------------------------------------------------------------------------------------------------------------
  
  ## Video
- https://www.youtube.com/watch?v=WM4zs0SFY3I&list=PLPmE-QpIWCGHVQyg5fKsbqvWBsKxdx76R
+ https://youtu.be/WM4zs0SFY3I
  
  -## Overview
  -This application allows for 3 different users to open up their specific application and see thier relevant information
